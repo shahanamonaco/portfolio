@@ -34,11 +34,11 @@ class CustomFooter extends HTMLElement {
                         <!-- Social Icons -->
                         <div class="flex space-x-4">
                             <!-- GitHub -->
-                            <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-pink-500 transition-colors duration-300">
+                            <a href="https://github.com/shahanamonaco" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-pink-500 transition-colors duration-300">
                                 <i data-feather="github" class="w-6 h-6"></i>
                             </a>
                             <!-- LinkedIn -->
-                            <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-pink-500 transition-colors duration-300">
+                            <a href="https://linkedin.com/in/" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-pink-500 transition-colors duration-300">
                                 <i data-feather="linkedin" class="w-6 h-6"></i>
                             </a>
                         </div>
