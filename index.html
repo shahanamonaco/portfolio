@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shahana Monaco - Creative Developer Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- FIX: Vanta.js requires Three.js for 3D rendering (WebGL) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="font-inter">
+    <custom-navbar></custom-navbar>
+    
+    <!-- Hero Section with Vanta.js Background -->
+    <section id="hero" class="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0" id="vanta-bg"></div>
+        <div class="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 bg-clip-text text-transparent">
+                Shahana Monaco
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 text-gray-200">Crafting digital experiences with code & creativity</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#projects" class="bg-gradient-to-r from-purple-600 to-pink-600 text-white px-8 py-3 rounded-full font-semibold hover:from-purple-700 hover:to-pink-700 transition-all duration-300 transform hover:scale-105 shadow-lg">
+                    View Projects
+                </a>
+                <a href="#about" class="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-gray-900 transition-all duration-300">
+                    About Me
+                </a>
+            </div>
+        </div>
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <i data-feather="chevron-down" class="text-white w-8 h-8"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-4xl font-bold text-gray-800 mb-6">Hello, I'm Shahana 👋</h2>
+                    <p class="text-lg text-gray-600 mb-8">
+                        A passionate bio tech student with a love for creating beautiful, functional websites 
+                        and applications. I specialize in modern web technologies and enjoy turning complex 
+                        problems into simple, elegant solutions.
+                    </p>
+                    
+                    <!-- NEW: Skill Cards Section -->
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-6 mt-10">My Core Skills</h3>
+
+                    <div class="grid grid-cols-2 gap-6">
+                        
+                        <!-- Skill 1: HTML -->
+                        <div class="flex flex-col items-center justify-center p-6 sm:p-8 bg-white rounded-xl shadow-lg border-b-4 border-purple-500 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 cursor-pointer">
+                            <i data-feather="code" class="w-10 h-10 text-purple-600 mb-3"></i>
+                            <span class="text-lg font-bold text-gray-800">HTML</span>
+                        </div>
+
+                        <!-- Skill 2: CSS -->
+                        <div class="flex flex-col items-center justify-center p-6 sm:p-8 bg-white rounded-xl shadow-lg border-b-4 border-pink-500 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 cursor-pointer">
+                            <i data-feather="layout" class="w-10 h-10 text-pink-600 mb-3"></i>
+                            <span class="text-lg font-bold text-gray-800">CSS</span>
+                        </div>
+
+                        <!-- Skill 3: JavaScript -->
+                        <div class="flex flex-col items-center justify-center p-6 sm:p-8 bg-white rounded-xl shadow-lg border-b-4 border-yellow-500 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 cursor-pointer">
+                            <i data-feather="zap" class="w-10 h-10 text-yellow-600 mb-3"></i>
+                            <span class="text-lg font-bold text-gray-800">JavaScript</span>
+                        </div>
+
+                        <!-- Skill 4: Canva (Using Feather icon for design/creativity) -->
+                        <div class="flex flex-col items-center justify-center p-6 sm:p-8 bg-white rounded-xl shadow-lg border-b-4 border-red-500 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 cursor-pointer">
+                            <i data-feather="feather" class="w-10 h-10 text-red-600 mb-3"></i>
+                            <span class="text-lg font-bold text-gray-800">Canva</span>
+                        </div>
+
+                    </div>
+                    <!-- END NEW: Skill Cards Section -->
+                </div>
+                
+                <!-- Updated image source to assets/example.png in the About section (from last step) -->
+                <div class="hidden md:block">
+                    <img src="assets/monaco_web_jpg.jpg" alt="Illustration of digital creativity" class="w-full h-auto rounded-xl shadow-2xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section (UPDATED PLACEHOLDERS) -->
+    <section id="projects" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center text-gray-800 mb-4">Featured Projects ✨</h2>
+            <p class="text-lg text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+                Here are some of my recent projects that showcase my skills and passion for web development.
+            </p>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1: DermaIQ -->
+                <div class="group relative bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden">
+                    <div class="relative overflow-hidden">
+                        <!-- CHANGE THIS TO YOUR IMAGE PATH -->
+                        <img src="assets/dermaiq_monaco_png.png" alt="DermaIQ" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Project Title 1: DermaIQ</h3>
+                        <p class="text-gray-600 mb-4">"A comprehensive skincare platform that utilizes AI to provide personalized product recommendations."</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <!-- Update these tags with your tech stack -->
+                            <span class="px-3 py-1 bg-purple-100 text-purple-600 rounded-full text-sm">HTML</span>
+                            <span class="px-3 py-1 bg-pink-100 text-pink-600 rounded-full text-sm">CSS</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">JavaScript</span>
+                        </div>
+                        <!-- IMPORTANT: ADD YOUR PROJECT LINK HERE -->
+                        <a href=" https://shameemxy.github.io/DermaIQ/" target="_blank" class="inline-flex items-center gap-2 text-purple-600 font-semibold hover:text-purple-700 transition-colors">
+                            View Project
+                            <i data-feather="external-link" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 2: School Faculty management app -->
+                <div class="group relative bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden">
+                    <div class="relative overflow-hidden">
+                        <!-- CHANGE THIS TO YOUR IMAGE PATH -->
+                        <img src="assets/classtrack.png" alt="ClassTrack" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Project Title 2: ClassTrack</h3>
+                        <p class="text-gray-600 mb-4">"A web-based application for managing school faculty and staff, a team project built with React and Node.js."</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <!-- Update these tags with your tech stack -->
+                            <span class="px-3 py-1 bg-purple-100 text-purple-600 rounded-full text-sm">React</span>
+                            <span class="px-3 py-1 bg-pink-100 text-pink-600 rounded-full text-sm">Node.js</span>
+                            <span class="px-3 py-1 bg-green-100 text-green-600 rounded-full text-sm">MongoDB</span>
+                        </div>
+                        <!-- IMPORTANT: ADD YOUR PROJECT LINK HERE -->
+                        <a href="https://github.com/shameemxy/classtrack.git" target="_blank" class="inline-flex items-center gap-2 text-purple-600 font-semibold hover:text-purple-700 transition-colors">
+                            View Project
+                            <i data-feather="external-link" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 3: Personal Portfolio -->
+                <div class="group relative bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden">
+                    <div class="relative overflow-hidden">
+                        <!-- CHANGE THIS TO YOUR IMAGE PATH -->
+                        <img src="assets/monaco_portfolio_png.png" alt="Personal Portfolio" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Project Title 3: Personal Portfolio</h3>
+                        <p class="text-gray-600 mb-4">"A personal portfolio website showcasing my projects and skills, built with HTML, CSS, and JavaScript."</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <!-- Update these tags with your tech stack -->
+                            <span class="px-3 py-1 bg-purple-100 text-purple-600 rounded-full text-sm">HTML</span>
+                            <span class="px-3 py-1 bg-pink-100 text-pink-600 rounded-full text-sm">CSS</span>
+                            <span class="px-3 py-1 bg-orange-100 text-orange-600 rounded-full text-sm">JavaScript</span>
+                        </div>
+                        <!-- IMPORTANT: ADD YOUR PROJECT LINK HERE -->
+                        <a href="https://project-link-3.com" target="_blank" class="inline-flex items-center gap-2 text-purple-600 font-semibold hover:text-purple-700 transition-colors">
+                            View Project
+                            <i data-feather="external-link" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gradient-to-br from-purple-600 via-pink-600 to-red-500">
+        <div class="container mx-auto px-4 text-center text-white">
+            <h2 class="text-4xl font-bold mb-4">Let's Work Together! 🚀</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto text-purple-100">
+                Have a project in mind? I'd love to hear about it. Let's create something amazing together.
+            </p>
+            <a href="mailto:hello@juliacodes.com" class="inline-flex items-center gap-2 bg-white text-purple-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-lg">
+                <i data-feather="mail" class="w-5 h-5"></i>
+                Get In Touch
+            </a>
+        </div>
+    </section>
+
+    <custom-footer></custom-footer>
+
+    <!-- Scripts -->
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+        
+        // Initialize Vanta.js background
+        VANTA.NET({
+            el: "#vanta-bg",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0x7c3aed,
+            backgroundColor: 0x0,
+            points: 12.00,
+            maxDistance: 22.00,
+            spacing: 18.00,
+            THREE: THREE
+        });
+    </script>
+</body>
+</html>
